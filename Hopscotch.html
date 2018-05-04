@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
+
+    <title>Anil Unnikrishnan</title>
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    
+	<!-- CSS -->
+	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="assets/css/font-awesome.min.css" rel="stylesheet" media="screen">
+	<link href="assets/css/simple-line-icons.css" rel="stylesheet" media="screen">
+	<link href="assets/css/animate.css" rel="stylesheet">
+    
+	<!-- Custom styles CSS -->
+	<link href="assets/css/style.css" rel="stylesheet" media="screen">
+    
+    <script src="assets/js/modernizr.custom.js"></script>
+
+   
+  </head>
+
+  <body>
+
+   <header class="header">
+
+		<nav class="navbar navbar-custom" role="navigation">
+
+			<div class="container">
+
+				<div class="navbar-header">
+					<br>
+					<a class="navbar-brand" href="index.html">Anil Unnikrishnan</a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="custom-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<br>
+						<li><a href="index.html#bio">Home</a></li>
+                        <li><a href="http://anilunni.wordpress.com" target="_blank">Blog</a></li>
+						<li><a href="index.html#projects">Projects</a></li>
+						<li><a href="content/Anil Resume.pdf">Resume</a></li>
+
+					</ul>
+				</div>
+
+			</div><!-- .container -->
+
+		</nav>
+
+	</header>
+
+	<!-- Navigation end -->
+	
+	
+	<!-- +++++ Projects Section +++++ -->
+	
+	<div class="container">
+		<div class="row">
+
+				<div class="col-xs-6 col-xs-offset-3 col-sm-7 col-sm-offset-2">
+		
+					<div class="pfblock-header ">
+						<br>
+						<h2 class="pfblock-title">Hopscotch Game</h2>
+					</div>
+				</div>
+		</div>
+		<p class="p1">&nbsp;</p>
+<p class="p5"><span class="s1">I wanted to improve the game of hopscotch, a popular playground game and make it more fun and entertaining to play. Hopscotch is a game where the guest needs to toss a stone or any object which can be tossed around onto a course labelled from 1 to n in ascending order. n can be any number which is usually around 8-10. The guest is then required to hop from 1 to n, avoiding the cell where the stone is currently placed, making sure to avoid the border of the grid. Landing on the border/line of the grid results in a disqualification.</span></p>
+<p class="p4">&nbsp;</p>
+<p class="p5"><span class="s1"><strong>What makes hopscotch a good game?</strong></span></p>
+<li class="li5"><span class="s1">One of the most important thing about hopscotch is that the game can be extended to any number of players. There is never a restriction on the number of players who can be part of the game. Even though, its a turn based game and only one guest can play it each time, anybody can join or leave the game anytime they choose. This decision does not affect the outcome of the game. </span></li>
+<li class="li5"><span class="s1">Following up on the first point, hopscotch can be played by a single guest as well. There might not be a sense of competition in the game but the guest can always go through the hopscotch course and try and improve his time taken to clear the entire course. There even exists a Guinness Record for the fastest hopscotch game which was played alone by Ashrita Furman.</span></li>
+<li class="li5"><span class="s1">Unlike other playground games, the hopscotch course can be drawn in any form or order. There is never a universal shape or size for the grid. The grid shape changes as per the convenience of the guest and the location in which they are playing. This makes the game highly flexible. Hopscotch is a game where everybody can set &ldquo;home rules&rdquo; depending on the situation and the number of players playing the game.</span></li>
+<li class="li5"><span class="s1">Even though known as a playground game, hopscotch can be played both indoor and outdoor. Indoor flooring like mosaic and tiles can be converted into grids and used to play the game. Guests also use tape to crate the grid.</span></li>
+<li class="li5"><span class="s1">Research has shown that hopping on one leg decreases the chance of osteoporosis. Studies conducted in reputed Universities like Loughborough, Cambridge, University Hospitals Leicester and Derby Hospitals NHS foundation Trust concluded that adults performing this exercise had increasing bone mineral density in the outer and spongy layers of the leg. Hopscotch as a game can be tweaked to benefit that segment of the population as well.</span></li>
+</ul>
+<p class="p4">&nbsp;</p>
+<p class="p5"><span class="s1"><strong>Problem Statement</strong></span></p>
+<p class="p5"><span class="s1">In the current version of the game, the player gets to rest in between the game in positions 2,3 and 7,8. This makes the game less challenging as the guest does not get tired too soon in one round. If the course of the game increases and if there are less breaks in between, the game will turn out to be more fun. This is one part of the problem that I wish to tackle in my new design of the game. The new version of the game will include a cell where the guest can place both his feet down but the length of the course will be longer but there will only be one break per say.</span></p>
+<p class="p5"><span class="s1">Another issue that I faced with the current game is that the challenge of the game is only involved in the part where the guest throws the stone. Once the stone is thrown, it is easy to circle through the course and come out of it victorious. I would like to work on this aspect of the game and make it more challenging. Currently, the guest landed on the cell before the cell where the stone is tossed onto, picks it up and then continues to exit the course. The amount of challenge to stoop down and pick up the stone is not enough in my opinion. This needs to be more challenging. In my design I hope to tackle this issue by making few tweaks to the gameplay rules.</span></p>
+<p class="p5"><span class="s1">As the game progresses, someone who has mastered the game continue to win indefinitely. Also, once the guest is ahead by a certain number of cells, it is hard to catch up to him and overtake him. The flip side of this is that the game is not progressive enough. The game only involves progressing in the ascending order of the number line and maybe descending down it once the maximum is reached. The game needs to get challenging with time. Also, there should be an urge to play more of the game other than just defeating your fellow players by progressing along the course. In this design, I have borrowed some inspiration from board games like Monopoly and mobile applications like Foursquare and hope to create a game which is more fun to play as the players progress through it.</span></p>
+
+<p class="p4">&nbsp;</p>
+<p class="p5"><span class="s1"><strong>Few new ideas for Hopscotch</strong></span></p>
+
+
+<li class="li6"><span class="s1">Play on surface which changes the pattern for each round of the game Use dices to decide the next cell to throw the stone to</span></li>
+<li class="li6"><span class="s1">Use a hula hoop while moving through the course</span></li>
+<li class="li6"><span class="s1">Pour gasoline on the lines and set it on fire </span></li>
+<li class="li6"><span class="s1">Standing on one cell for too long will disqualify you from that round</span></li>
+<li class="li6"><span class="s1">Stop hopping when the other players ask you to and balance on one foot Pouring oil in the cells</span></li>
+<li class="li6"><span class="s1">Juggling juggling balls as you hop down the course</span></li>
+<li class="li6"><span class="s1">Save the princess hopscotch</span></li>
+<li class="li6"><span class="s1">Hacking a computer as you play hopscotch using brute-force</span></li>
+<li class="li6"><span class="s1">Progress in a story chapter by chapter as you move through the game. Completing each cell will provide you with the new chapter to the </span></li>
+<li class="li6"><span class="s1">Completing each grid, provides you with a puzzle piece to a large jigsaw </span></li>
+<li class="li6"><span class="s1">Leave a gap between the cells. Cells are never next to each other</span></li>
+<li class="li6"><span class="s1">Take two steps forward, one step back</span></li>
+<li class="li6"><span class="s1">Quack like a chicken as you progress down the course</span></li>
+<li class="li6"><span class="s1">Use a 2x4 grid. But instead of hopping onto the 4th cell, perform a handstand and land on the 5th cell (both feet are fine)</span></li>
+<li class="li6"><span class="s1">Multiplayer hopscotch - Two guests parallel to each other, making their way towards the end, competing against each other</span></li>
+<li class="li6"><span class="s1">Hopscotch with a jump rope</span></li>
+<li class="li6"><span class="s1">Mixture of hopscotch and Dance Dance Revolution</span></li>
+<li class="li6"><span class="s1">Co-op hopscotch - Both guests need to throw the rock onto the right cell and make their way through the course in opposite directions</span></li>
+<li class="li6"><span class="s1">Zig-zag hopscotch course with different size cells</span></li>
+<li class="li6"><span class="s1">Time based hopscotch - Not only do you have to land the rock in the right position, you need to do the most number of cells as soon as possible</span></li>
+<li class="li6"><span class="s1">Guest repeats the word &ldquo;kabbadi&rdquo; as he goes down the course</span></li>
+<li class="li6"><span class="s1">Hop on even cells only</span></li>
+<li class="li6"><span class="s1">Play with a series of stones. As you progress, replace the current stone with a stone that is harder to play (say a stone that is less flat)</span></li>
+<li class="li6"><span class="s1">Move around the hopscotch course, by piggybacking your teammate</span></li>
+<li class="li6"><span class="s1">Pogo-stick hopscotch</span></li>
+<li class="li6"><span class="s1">Instead of picking up the rock, the player needs to flick the stone outside the course and move past a spot designated by others playing</span></li>
+<li class="li6"><span class="s1">Throw multiple rocks. One progress from in the ascending order. The other in the defending order. Both need to land to start hopping</span></li>
+<li class="li6"><span class="s1">Once the stone is thrown and you reach the cell before the one the stone is placed in, jump onto the stone, making sure not to stamp the line and then pick up the stone and finish the course</span></li>
+<li class="li6"><span class="s1">Two guests hop with their feet tied together. Like a 3-legged race. But only hopping</span></li>
+<li class="li6"><span class="s1">A certain path is defined for each round. The next cell to jump to can only be either the neighbouring cells or cells that are one away from the neighbouring cells</span></li>
+
+<li class="li6"><span class="s1">Shout out a series as you go down the course. Eg: Prime number - If there are 8 cells, you need to shout out 1,2,3,5,7,11,13,17. If you say the wrong number or take time to say it as you jump, you lose</span></li>
+<li class="li6"><span class="s1">Hopscotch in vertical space. Like wall climbing. You cannot touch your feet on the peg that's marked by the number you throw your lasso onto</span></li>
+<li class="li6"><span class="s1">Hop x number of times in the same cell before proceeding to the next</span></li>
+<li class="li6"><span class="s1">Hopscotch relay (4 member team). Each person completes a part of the course and the team moves forward as a team</span></li>
+<li class="li6"><span class="s1">Three dimensional hopscotch</span></li>
+<li class="li6"><span class="s1">Hopscotch underwater</span></li>
+<li class="li6"><span class="s1">Each cell will make a difference noise. Try to match the audio played and jump on the right cell</span></li>
+<li class="li6"><span class="s1">Hopscotch cells will trigger shooting asteroids on the screen in front of the hopscotch course</span></li>
+<li class="li6"><span class="s1">Hopscotch inside a maze</span></li>
+<li class="li6"><span class="s1">Each player hops to the cell furthest possible. The game starts each time from the lowest of these numbers.</span></li>
+<li class="li6"><span class="s1">Hopscotch on a bed of nails</span></li>
+<li class="li6"><span class="s1">Dribble basketball while going down the course</span></li>
+<li class="li6"><span class="s1">Tie ropes on the grid so people trip over them</span></li>
+<li class="li6"><span class="s1">Take an alcohol shot when you can't complete the course</span></li>
+<li class="li6"><span class="s1">Play audio from each cell and play the game blindfolded</span></li>
+<li class="li6"><span class="s1">Rub your belly and tap your head as you go down the course</span></li>
+<li class="li6"><span class="s1">Each cell is a conveyor belt which moves in a random direction</span></li>
+<li class="li6"><span class="s1">Random 3x3 grid which contains two digit numbers which keep changing. Play through the game by adding the two digits and figuring out where the next cell is</span></li>
+<li class="li6"><span class="s1">Juggling a football as you make your way through the course</span></li>
+<li class="li6"><span class="s5">P</span><span class="s1">lace the stone on top of the guest's feet as they make their way back after picking up the stone</span></li>
+<li class="li6"><span class="s1">Hopscotch Monopoly</span></li>
+<li class="li6"><span class="s1">Other players hurl water balloons at you while you hop through the course</span></li>
+<li class="li6"><span class="s1">Hopscotch 100 feet above the ground</span></li>
+</ol>
+<p class="p7">&nbsp;</p>
+<p class="p8">&nbsp;</p>
+<p class="p4">&nbsp;</p>
+<p class="p5"><span class="s1"><strong>Drilling down deeper into a few of them</strong></span></p>
+
+<p class="p4">&nbsp;</p>
+<ol class="ol2">
+<li class="li5"><span class="s1"><strong>A certain path is defined for each round. The next cell to jump to can only be either the neighbouring cells or cells that are one away from the neighbouring cells. </strong></span></li>
+</ol>
+
+<div class="row">
+			<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-lg-4 col-lg-offset-4">
+				<p><img class="img-responsive" src="content/hopscotch/1.png" alt="Hopscotch"></p>				
+			</div>
+</div>
+
+<p class="p4">&nbsp;</p>
+<p class="p5"><span class="s1">As shown in the figure, the grid represents a standard game of hopscotch. The guest is required to move from 1 to 8. In my iteration of the game, all the players together decide on the sequence in which the guest is supposed to move. </span></p>
+<p class="p5"><span class="s1">In the example given, the guest is being given the sequence of 1,7,8,2,4,3,6,5. Notice how each cell is a neighbouring cell of the previous cell other than the transition from 2 to 4. Here, the player is forced to hop from 2 to 4 without landing on 3. </span></p>
+<p class="p5"><span class="s1">All standard rules of the hopscotch is included. One rule that&rsquo;s included is that, if the guest forgets the sequence and hops onto a wrong cell, he is disqualified from that round. The guest not only has to move forward in the sequence, he/she is required to hop back in the descending order as well, in this case 5,6,3,4,2,8.7,1. </span></p>
+
+<div class="row">
+			<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-lg-4 col-lg-offset-4">
+				<p><img class="img-responsive" src="content/hopscotch/2.png" alt="Hopscotch"></p>				
+			</div>
+</div>
+
+
+<p class="p5"><span class="s1">The image shown to the left is the path taken by the guest as he traverses through the first half of the game from 1 to 5. The same path needs to traversed to finish a round.</span></p>
+<p class="p4">&nbsp;</p>
+<p class="p5"><span class="s1">What makes this iteration interesting?</span></p>
+<p class="p5"><span class="s1"><br />The standard rules of this iteration is not very different from a regular hopscotch game. As mentioned above, the biggest downside of this game is that, it is extremely linear in nature. The guest has to traverse through the same grid, in the same order each time they play. This improvement has been introduced to remove the linearity of the game. After every 3 rounds, the sequence is changed and each player takes turns shouting out the new sequence. This sequence is only presented once for those 3 rounds and can be written down and hidden incase the players are worried about everyone forgetting the sequence.</span></p>
+
+
+<p class="p4">&nbsp;</p>
+<p class="p5"><span class="s1">2.<strong><span class="Apple-converted-space">&nbsp; &nbsp; </span>Hopscotch Monopoly</strong></span></p>
+
+<p class="p5"><span class="s1">This is the version of the game I feel wish to create and improve on as I feel it combines few ideas from other forms I&rsquo;ve already suggested. As suggested in the previous section, hopscotch suffers from boredom an hour into the game. Other than a sense of competition between the players, there is no goal the players are working towards. This is what I hope to improve in my iteration of the game.</span></p>
+<p class="p4">&nbsp;</p>
+<p class="p5"><span class="s1">What makes this iteration interesting?</span></p>
+<p class="p4">&nbsp;</p>
+<p class="p5"><span class="s1">The game is no longer linear. The hopscotch course will be designed similar to a Monopoly board and will need the guest to start from a point, go around the course and get back to that start point each time. The number of stops or places where the player can stop and rest are limited. This improves the speed of the game and makes it more challenging. Even though hopscotch is considered a game, it lacks few basic requirements of a game. An interesting article by Keith Burgun named &ldquo;What Makes A Game?&rdquo; is good reference to answer this. Despite the fact that hopscotch has a system of rules, agents (guests) are not forced to make ambiguous decisions. In this iteration of the game, I wish to bring such elements into the game of hopscotch.</span></p>
+<p class="p4">&nbsp;</p>
+
+
+
+
+
+<p class="p5"><span class="s1">3. <strong><span class="Apple-converted-space">&nbsp; </span>Play with a series of stones. As you progress, replace the current stone with a<span class="Apple-converted-space">&nbsp; </span>stone that is harder to play with (say a stone that is less flat)</strong></span></p>
+
+<div class="row">
+			<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-lg-4 col-lg-offset-4">
+				<p><img class="img-responsive" src="content/hopscotch/3.png" alt="Hopscotch"></p>				
+			</div>
+</div>
+
+<p class="p5"><span class="s1">One of the major issues hopscotch faces is that, once a guest masters the technique to throw the stone, he continues to get better at the game and there is no way to catch up to him. There are other cases where the stone used by the player is perfectly flat and just right that it does not bounce away once it gets thrown onto the grid. </span></p>
+<p class="p5"><span class="s1">One way to tackle this situation is to have stones of different sizes and as the player progresses through the game, he is forced to use stones that are harder to play with. For example, as he progresses down the column, he can be made to pick a stone that has more rounded edges. </span></p>
+<p class="p4">&nbsp;</p>
+<p class="p5"><span class="s1">What makes this iteration interesting?</span></p>
+<p class="p4">&nbsp;</p>
+<p class="p5"><span class="s1">In this iteration, the position of the different players in the leaderboard will be less dispersed. This helps the players who are lagging behind in the game, catch up and move forward, closer to the leader. As the game progresses onto harder cells of the grid, the competition between the players will be more neck and neck. This prevents a long winning streak for most of the winners.</span></p>
+<p class="p4">&nbsp;</p>
+
+
+
+
+
+<p class="p5"><span class="s1"><strong>PART III</strong></span></p>
+<p class="p5"><span class="s1">The idea I wish to explore and develop on is the <strong>Hopscotch Monopoly</strong> version of the game.</span></p>
+<p class="p5"><span class="s1">The rules for the game are as follows:</span></p>
+<p class="p5"><span class="s1"><strong>Setup:</strong></span></p>
+<p class="p5"><span class="s1">A large square needs to be drawn on the floor with 12 cells and sufficiently enough space to hop onto each one of them as shown below. </span></p>
+
+<div class="row">
+			<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-lg-4 col-lg-offset-4">
+				<p><img class="img-responsive" src="content/hopscotch/4.png" alt="Hopscotch"></p>				
+			</div>
+</div>
+
+
+<p class="p5"><span class="s1">The guests are requested to have a variety of stones in different shapes as shown below. The requirement of the same will be explained in the rules below.</span></p>
+<p class="p5"><span class="s1"><strong>Instructions:</strong></span></p>
+<ul>
+<li class="li5"><span class="s1">Important terms :</span></li>
+<ul>
+<li class="li5"><span class="s1">Turn : Number of times the same guest can play</span></li>
+<li class="li5"><span class="s1">Round : A round is over once every guest has played atleast once</span></li>
+<li class="li5"><span class="s1">Set : Progression of the game from the first cell to the 12th cell</span></li>
+</ul>
+<li class="li5"><span class="s1">After drawing the grid as shown in the image, the first guest throws a stone into the first cell. Make sure to pick a stone that is considerably flat as it is easier to aim and land the stone in the required cell. </span></li>
+<li class="li5"><span class="s1">The guest hops onto the cell, making sure to land on the stone. Failure in doing so or landing on the marked edges, will disqualify him from the round.</span></li>
+<li class="li5"><span class="s1">The guest is required to pick up the stone (hopping inside the same cell is allowed), without touching the edges of the cell, and needs to make his way through the course.</span></li>
+<li class="li5"><span class="s1">Successfully completing one cell lets him move forward into the next cell. </span></li>
+<li class="li5"><span class="s1">While tossing the stone, if the stone lands on the lines or outside the required cell, he is disqualified from the round and the next guest steps forward to start/continue from where he left off.</span></li>
+<li class="li5"><span class="s1">Once a guest completes all the 12 cells, he has the option to toss the stone into any one of the cells. This lets him claim a part of the cell as shown below. He gets to claim a part of the cell which is demarcated by the red line. In this case, the player&rsquo;s initials are marked on the side of his choosing. </span></li>
+
+
+<div class="row">
+			<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-lg-4 col-lg-offset-4">
+				<p><img class="img-responsive" src="content/hopscotch/5.png" alt="Hopscotch"></p>				
+			</div>
+</div>
+
+<li class="li5"><span class="s1">In the same round, if another guest tosses his stone into that sub-cell, he not only loses his turn in that round but also prevented from playing the next round.</span></li>
+<li class="li5"><span class="s1">Once a guest finishes his set of 12, he can no longer use the flat stones. He needs to progress onto a stone that is more spherical to play the next set of 12.</span></li>
+<li class="li5"><span class="s1">As rounds progress, if a guest lands his stone on a sub-cell which is already claimed in the previous round, the guest gets to claim the sub-cell from the previous guest. For example, if a guest B, in round 3, claims the above shown sub-cell which was claimed by guest A in round 2, this sub-cell can be claimed by guest B.</span></li>
+<li class="li5"><span class="s1">If a guest has a sub-cell that was claimed during the previous round, he need not play that cell in the coming round. For example, in the above figure, guest A has claimed a part of cell 3. Once he completes cell 2, he can directly move onto cell 4 by skipping cell 3.</span></li>
+<li class="li5"><span class="s1">The game ends when a guest claims all the cells for himself.</span></li>
+</ul>
+
+
+
+<p class="p4">&nbsp;</p>
+<p class="p5"><span class="s1"><strong>Play Tests</strong></span></p>
+<p class="p5"><span class="s1">In the first iteration of the play test that included friends, the size of the hopscotch had to be reduced to 10 due to a real-estate constraint. This does not have any effect on the game.</span></p>
+<p class="p5"><span class="s1">Even though they found the rules quite straightforward, the game started to take too long and was continuing indefinitely as the guests were taking over each other&rsquo;s sub-cell and clear winner could not be decided. </span></p>
+<p class="p5"><span class="s1">The<span class="Apple-converted-space">&nbsp; </span>game finally had to be ended by the players deciding to declare the guest with the most number of sub-cells as the winner. Another issue faced in the play-test was the spherical stone. As the game progressed and the stone was replaced by more rounded ones, the game started to become harder and the guests who were lagging behind caught up to the leaders, but from then on, the progression of the game was observed to be slower as the chances of the players landing the stone in the right position had started to diminish. </span></p>
+<p class="p4">&nbsp;</p>
+<p class="p5"><span class="s1"><strong>Learnings from the play-tests</strong></span></p>
+<ol class="ol2">
+<li class="li5"><span class="s1">First round of the game was slow in progression</span></li>
+</ol>
+
+<div class="row">
+			<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-lg-4 col-lg-offset-4">
+				<p><img class="img-responsive" src="content/hopscotch/6.png" alt="Hopscotch"></p>				
+			</div>
+</div>
+
+
+<p class="p5"><span class="s1"> As the game consists of 12 cells, the first iteration comprised of the guests moving through the course once, without claiming any parts of the cell. This part of the game was not very different from the usual rules of hopscotch. The only difference was that the player had to step onto the stone, hop onto another location in the same cell to pick up the stone. This made the game more fun as there was always a challenge to pick up the stone. There were times when the guest landed on the stone but hopped onto the border and other times they would land on the stone but accidentally kick it away from the cell. This was a valuable take-away for a feature.</span></p>
+<p class="p4">&nbsp;</p>
+<ol class="ol2">
+<li class="li5"><span class="s1">Deadlock when two people take up the same cell</span></li>
+</ol>
+<p class="p5"><span class="s1"> I noticed that there would be a deadlock case when two guests claimed two halves of the same cell. If there were more than two players, the third player couldn&rsquo;t play that cell as he was making his way through the course. Skipping that cell all together destroyed the purpose of the division. This mechanic had to be rethought. </span></p>
+<p class="p4">&nbsp;</p>
+<p class="p5"><span class="s1">3. Redundancy</span></p>
+<p class="p5"><span class="s1"> Even though the mechanic of dividing the cells into sub-cells was interesting, there was still a form of redundancy and lack of fun in the game.</span></p>
+
+<div class="row">
+			<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-lg-4 col-lg-offset-4">
+				<p><img class="img-responsive" src="content/hopscotch/7.png" alt="Hopscotch"></p>				
+			</div>
+</div>
+
+<p class="p4">&nbsp;</p>
+<p class="p5"><span class="s1"><strong>Iterations That Focussed On Making The Game Fun</strong></span></p>
+<p class="p5"><span class="s1">To tackle the slow progression of the game, the rule wherein the guest could claim a cell after playing the entire course was altered. This was done in an intension to make the game more fast paced and fun. As soon as the guest drops the stone in the first cell and completes the course, he gets to toss the stone again to claim a part of the cell. The image below shows the state of the game after two passes (after guest A and guest B have successfully captured half of cell 4 and 9 correspondingly)</span></p>
+
+
+
+
+<p class="p9"><span class="s1"><strong> &ldquo;Guests could claim sub-cells after each round of the game&rdquo;</strong></span></p>
+<p class="p5"><span class="s1">This change in the rules quickly escalated the game into a strategy game where guests were trying to take over other guests&rsquo; &ldquo;territories&rdquo;. There was more engagement by the guests who weren't playing the game at that time as well. Guests weren't idling around, waiting for their turn, but were involved in the decisions each player was making as they started claiming sub-cells. </span></p>
+<p class="p5"><span class="s1">When a player started to get better, others started to tag team against him. They started to take up adjacent sub-cells to prevent him from advancing forward easily. This led to a <strong>new rule</strong> in the game:</span></p>
+<p class="p5"><span class="s1">If both the sub-cells have been occupied, the player has to pass through those cells using their hands and quickly landing on the cell which is safe for them to land on. The guest could also ask for one of the sub-cell holders to act as his ally. If he agreed to it, the guest could hop onto that sub-cell but had to give up one of his sub-cells to the other guest. <br />For example: If guest A makes guest B his ally to use one of his sub-cells, guest A had to give away one of his sub-cells to guest B.</span></p>
+<p class="p5"><span class="s1">The made the game more personal where guests started to plot against one another to win the game. </span></p>
+<p class="p5"><span class="s1">An extension to this rule was made in games where there were 4+ guests. The guests to whom the sub-cells did not belong to could tag-team and play that round together. Both of them had to choose a different sub-cell to which they would throw the stone and on successful completion of the course, the two guests to whom the sub-cells belonged to would no longer have power over them. The cell will be devoid of all the guests and the guests have the opportunity to claim them again.</span></p>
+<p class="p4">&nbsp;</p>
+<p class="p9"><span class="s1"><strong>&ldquo;New system of allies were introduced which could help guests in tough situations&rdquo; </strong></span></p>
+<p class="p5"><span class="s1"><strong>Future Avenues To Think Of</strong></span></p>
+<li class="li5"><span class="s1">Improve on the multiplayer aspect of the game.</span></li>
+<li class="li5"><span class="s1">The 4th block will have a set of cards next to it which will dictate what the guest has to perform (like going back few cells or kicking the raised leg forward each time he moves forward etc)</span></li>
+</ol>
+<p class="p4">&nbsp;</p>
+<p class="p5"><span class="s1"><strong>Conclusion</strong></span></p>
+<p class="p5"><span class="s1">In this version of hopscotch, I feel I was able to make the game more fun and enjoyable to everyone. The problem with the regular version of hopscotch was tackled and results were observed. The guests paid more attention to the new version of the game and the game felt more challenging. There was a sense of multiplayer that was developed during the game and guests interacted more with each other as the game progressed. The game was built to be well rounded and at every point, every guest felt vulnerable and had to think on his feet to make sure his territories were protected and had to strategise in order to win the game.<span class="Apple-converted-space">&nbsp; &nbsp;</span></span></p>
+
+		
+
+
+	</div><!-- /container -->
+  <br>
+
+
+	<div class="col-sm-12">
+		
+	
+		 	<div class ="col-sm-2 col-sm-offset-1 ">
+				<a class="glyphicon glyphicon-chevron-left" href="Quest.html">Previous </a>
+  			</div>
+  		
+			<div class ="col-sm-7">
+			</div>
+   			<div class ="col-sm-2 ">
+     			 <a href="Bvw1.html"> Next<i class="glyphicon glyphicon-chevron-right"></i>
+  				</a>
+      		</div>
+    </div>
+	
+	<br>
+	<br>
+	
+	<!-- +++++ Footer Section +++++ -->
+	
+	<!-- Footer start -->
+
+	<footer id="footer">
+
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-12">
+
+					<ul class="social-links">
+						<li><a href="https://www.facebook.com/unnikrishnan.anil" class="wow fadeInUp"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://twitter.com/anil_uk" class="wow fadeInUp" data-wow-delay=".1s"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="https://www.linkedin.com/in/unnikrishnananil" class="wow fadeInUp" data-wow-delay=".2s"><i class="fa fa-linkedin"></i></a></li>
+					</ul>
+
+				</div>
+
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</footer>
+
+	<!-- Footer end -->
+	
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
+  
+  <!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-52704451-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+</html>
